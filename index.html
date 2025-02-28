@@ -3,77 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome</title>
+    <title>Welcome</title>
 
     <style>
-        *{
-            margin: 0px;
-            padding: 0%;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        header{
+        header {
             background-color: #804f3b;
-            height: 100px;
+            height: 80px;
             border-radius: 0 0 30px 30px;
-          
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
         }
 
-
-        nav ul{
+        nav ul {
             display: flex;
             flex-direction: row;
-            gap: 70px;
-            justify-content:right; 
+            gap: 50px;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
         }
-        li a{
-            font-size: 26.5px;
-            text-decoration: None;
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            font-size: 22px;
+            text-decoration: none;
             color: white;
             font-weight: bold;
         }
-        li{
-            list-style: none;
-            margin-top: 30px;
-            margin-right: 20px;
 
-        }
-
-        .main-container{
+        .main-container {
             display: grid;
-            grid-template-columns: 70% 30%;
+            grid-template-columns: 60% 40%;
+            align-items: center;
             height: 100vh;
+            background-color: #f7e5d6;
+            padding: 40px;
         }
 
+        .container1 h1 {
+            font-size: 72px;
+            color: #5a3d31;
+        }
+
+        .container1 h2 {
+            font-size: 50px;
+            color: #5a3d31;
+            margin-top: 10px;
+        }
+
+        .container1 b {
+            font-weight: bold;
+        }
+
+        .container2 img {
+            max-width: 100%;
+            display: block;
+        }
     </style>
-
-
 </head>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="main-container">
         <div class="container1">
-            <h1 style="font-size: 87px;">Welcome!</h1>
-            <h2 style="font-size: 64px;">I'm Jeffry</h2>
-            <h2 style="font-size: 64px;">Coder , Creator ,<b>LifeLong Learner</b></h2>
+            <h1>Welcome!</h1>
+            <h2>I'm Jeffry</h2>
+            <h2>Coder, Creator, <b>Lifelong Learner.</b></h2>
         </div>
 
         <div class="container2">
-            <img src="assets/image/profile icon.png" alt="">
+            <img src="assets/image/profile icon.png" alt="Profile Icon">
         </div>
     </div>
-
-
 </body>
 </html>
